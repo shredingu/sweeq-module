@@ -13,6 +13,8 @@ if SHIELD_SWEEQ_LEFT || SHIELD_SWEEQ_RIGHT
 config ZMK_SPLIT
     default y
 
+config ZMK_POINTING
+    default y
 # config ZMK_DISPLAY
 # 
 # if ZMK_DISPLAY
@@ -20,8 +22,6 @@ config ZMK_SPLIT
 # config SSD1306
 #     default y
 # 
-# config I2C
-#     default y
 # 
 # endif # ZMK_DISPLAY
 # 
@@ -43,3 +43,9 @@ config ZMK_SPLIT
 # endif # LVGL
 
 endif # SHIELD_SWEEQ_LEFT || SHIELD_SWEEQ_RIGHT
+
+if SHIELD_SWEEQ_RIGHT
+    # Left side of sweeq has the touchpad 
+    config I2C
+        default y
+endif
