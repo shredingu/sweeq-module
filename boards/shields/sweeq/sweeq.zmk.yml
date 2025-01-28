@@ -1,12 +1,15 @@
-file_format: "1"
+file_format: '1'
 id: sweeq
 name: Sweeq
 type: shield
 url: https://github.com/foostan/crkbd/
-requires: [pro_micro]
+requires:
+  - pro_micro
+  - cirque pinnacle trackpad
 # exposes: [i2c_oled]
 features:
   - keys
+  - mouse
   # - display
 siblings:
   - sweeq_left

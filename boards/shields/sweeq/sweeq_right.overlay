@@ -16,16 +16,17 @@
 
 &pro_micro_i2c {
     status = "okay";
+    clock-frequency = < 400000 >;
 
-    glidepoint: glidepoint@2a {
+    glidepoint: glidepoint@2A {
         compatible = "cirque,pinnacle";
-        reg = <0x2a>;
+        reg = <0x2A>;
         status = "okay";
         //dr-gpios= <&pro_micro 14 (GPIO_ACTIVE_HIGH)>;
 
-        sensitivity = "4x";
+        //sensitivity = "4x";
         //sleep;
-        no-taps;
+        //no-taps;
 
     };
 
