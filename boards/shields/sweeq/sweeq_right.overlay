@@ -17,9 +17,9 @@
 &pro_micro_i2c {
     status = "okay";
 
-    glidepoint: glidepoint@0x2A {
+    glidepoint: glidepoint@2a {
         compatible = "cirque,pinnacle";
-        reg = <0x2A>;
+        reg = <0x2a>;
         status = "okay";
         //dr-gpios= <&pro_micro 14 (GPIO_ACTIVE_HIGH)>;
 
