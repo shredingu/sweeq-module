@@ -12,4 +12,9 @@
 
 &glidepoint_listener {
     status = "okay";
+
+    scroller {
+        layers = <4>;
+        input-processors = <&zip_xy_to_scroll_mapper>;
+    }
 };
