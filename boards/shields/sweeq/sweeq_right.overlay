@@ -23,6 +23,7 @@
         reg = <0x2A>;
         status = "okay";
         dr-gpios= <&pro_micro 14 (GPIO_ACTIVE_HIGH)>;
+        y-invert;
 
         //sensitivity = "4x";
         //sleep;
