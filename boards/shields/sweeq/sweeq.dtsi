@@ -53,4 +53,9 @@
         status = "disabled";
         device = <&glidepoint_split>;
     };
+
+    msc_input_listener: msc_input_listener {
+        compatible = "zmk,input-listener";
+        device = <&glidepoint_split>;
+    };
 };
